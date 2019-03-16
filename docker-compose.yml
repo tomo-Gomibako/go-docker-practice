@@ -9,7 +9,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - .:/go/src/app
+      - ./go/src/:/go/src/app
     depends_on:
       - db
   db:
